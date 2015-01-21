@@ -1,0 +1,94 @@
+{
+   "basePath": "http://localhost:8080/rest",
+   "apis": [{
+      "methods": [{
+         "headers": [],
+         "bodyobject": null,
+         "jsondocId": "ce322787-02be-48d9-b12a-e2561bd50435",
+         "consumes": [],
+         "response": {
+            "mapKeyObject": "",
+            "jsondocId": "5ef7eedf-1ab7-4073-8465-b0a0f973c69c",
+            "mapValueObject": "",
+            "object": "Product"
+         },
+         "pathparameters": [
+            {
+               "jsondocId": "537ea01e-e784-4e4e-9d2d-18927ee443e9",
+               "description": "Unique product code",
+               "name": "productCode",
+               "allowedvalues": [],
+               "format": "",
+               "required": "true",
+               "type": "string"
+            },
+            {
+               "jsondocId": "3c7587cc-fa21-4f35-98cb-fbd555f8d5e4",
+               "description": "Product name",
+               "name": "productName",
+               "allowedvalues": [],
+               "format": "",
+               "required": "true",
+               "type": "string"
+            }
+         ],
+         "apierrors": [],
+         "verb": "GET",
+         "description": "Get a book",
+         "queryparameters": [],
+         "path": "/api/product/json",
+         "produces": ["application/json"],
+         "methodName": "show"
+      }],
+      "jsondocId": "8f8ad56c-44a5-4880-a5c9-ae11620e2b48",
+      "description": "Product service, end point for the product actions.",
+      "name": "Product Service"
+   }],
+   "objects": [{
+      "jsondocId": "1829b4e8-ffed-41a4-92b0-85ecaacb7c97",
+      "description": "A Product represents, and item in the store.",
+      "name": "Product",
+      "fields": [
+         {
+            "jsondocId": "f1408856-c081-4a52-979f-fd0edb340226",
+            "description": null,
+            "presentInResponse": null,
+            "mandatory": null,
+            "name": "id",
+            "allowedvalues": null,
+            "useForCreation": null,
+            "format": null,
+            "defaultValue": null,
+            "type": "Long",
+            "multiple": "false"
+         },
+         {
+            "jsondocId": "ce5e900c-f65e-412f-aac8-65e1462585aa",
+            "description": "Product code is unique for a given product.",
+            "presentInResponse": true,
+            "mandatory": true,
+            "name": "productCode",
+            "allowedvalues": null,
+            "useForCreation": true,
+            "format": null,
+            "defaultValue": null,
+            "type": "String",
+            "multiple": "false"
+         },
+         {
+            "jsondocId": "743a0130-f7e2-40e4-9745-c63c273398d5",
+            "description": "Name of the product",
+            "presentInResponse": true,
+            "mandatory": true,
+            "name": "productName",
+            "allowedvalues": null,
+            "useForCreation": true,
+            "format": null,
+            "defaultValue": null,
+            "type": "String",
+            "multiple": "false"
+         }
+      ]
+   }],
+   "version": "0.1.1"
+}
